@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.projectzoo">
+    <!-- Разрешения -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo_zoo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_zoo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProjectZoo"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activities.PaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.PurchasedTicketsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.DetailNewsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.DetailAnimalsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.EditProfileActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCKjIWqBLvkczMaWgfEo8k9gbJK8TSZHMc" />
+
+        <activity
+            android:name=".Activities.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.RulesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.ContactsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.RegistrationActivity"
+            android:exported="true"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.LoginActivity"
+            android:exported="false"
+            android:label="Регистрация" />
+        <activity
+            android:name=".Activities.ForgotPasswordActivity"
+            android:exported="false"
+            android:label="Восстановление пароля" />
+        <activity
+            android:name=".Activities.MainActivity"
+            android:exported="false"
+            android:label="Главная страница" />
+        <activity
+            android:name=".Activities.MapActivity"
+            android:exported="false"
+            android:label="Карта" />
+        <activity
+            android:name=".Activities.StoreActivity"
+            android:exported="false"
+            android:label="Магазин" />
+        <activity
+            android:name=".Activities.AnimalActivity"
+            android:exported="false"
+            android:label="Животные" />
+        <activity
+            android:name=".Activities.EventActivity"
+            android:exported="false"
+            android:label="Мероприятия" />
+        <activity
+            android:name=".Activities.MoreActivity"
+            android:exported="false"
+            android:label="Ещё" />
+    </application>
+
+</manifest>

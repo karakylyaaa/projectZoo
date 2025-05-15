@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "323708244583",
+    "project_id": "zoophotos-38fdb",
+    "storage_bucket": "zoophotos-38fdb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:323708244583:android:6412cdf0c92b518a4fbac2",
+        "android_client_info": {
+          "package_name": "com.example.projectzoo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxmo-uclBSHBIwldJwYsQSpA0_30dJ9Bw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp">
+
+    <!-- Тулбар -->
+    <LinearLayout
+        android:id="@+id/more_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/icon_rules"
+            android:layout_marginEnd="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Правила поведения"
+            android:textSize="18sp"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <!-- Полоска-разделитель -->
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/more_toolbar"
+        android:background="#000000" />
+
+    <LinearLayout
+        android:id="@+id/back_button"
+        android:layout_below="@id/more_toolbar"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="4dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/arrow_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Назад"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <!-- Основной контент с прокруткой -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/back_button"
+        android:padding="16dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Раздел 1 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Относитесь с уважением к животным:"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Не кормите животных без разрешения сотрудников зоопарка. Многие животные получают специальный рацион, соответствующий их здоровью и потребностям. Неподходящая пища может навредить им."
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginStart="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Избегайте попыток прикоснуться к животным, даже если они выглядят дружелюбными. Животные могут испугаться или проявить агрессию, что опасно для вас и для них."
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginStart="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Держитесь на безопасном расстоянии от ограждений и барьеров. Это необходимо для вашей безопасности и предотвращения травм."
+                android:textSize="14sp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="8dp"/>
+
+            <!-- Раздел 2 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. Поддерживайте тишину и порядок:"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Старайтесь избегать шума и использования громких устройств. Громкие звуки могут вызывать стресс у животных."
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginStart="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Соблюдайте чистоту, убирайте за собой мусор. Бумажки и остатки пищи могут загрязнить окружающую среду."
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginStart="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Следуйте установленным маршрутам движения и указателям."
+                android:textSize="14sp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="8dp"/>
+
+            <!-- Раздел 3 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. Будьте внимательными и ответственными:"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Проявляйте уважение к другим посетителям, особенно к детям."
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginStart="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Никогда не заходите за ограждения и не нарушайте границы вольеров."
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginStart="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Помните, что зоопарк — это дом для животных. Уважайте их пространство и покой."
+                android:textSize="14sp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="8dp"/>
+
+            <!-- Раздел 4 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4. Соблюдайте инструкции сотрудников:"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Внимательно слушайте и выполняйте рекомендации сотрудников зоопарка."
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginStart="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Если у вас возникли вопросы, обращайтесь к сотрудникам."
+                android:textSize="14sp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="8dp"/>
+
+            <!-- Раздел 5 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5. Берегите природу:"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Относитесь бережно к растениям и зеленым насаждениям."
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginStart="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Используйте только предназначенные места для курения."
+                android:textSize="14sp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
